@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ecriture
+        var a = 2
+        var une_variable_plus_longue = "Ma super chaine"
+
+        /*---Les types de variables---*/
+        //Les nombres 
+        var a = 2
+        var b = 3.4123
+        var c = -509
+        var d = 1/3
+
+        //Les chaine de caractère
+        var a = "Salut les gens"
+        var b = 'Re-Salut les gens'
+
+        var a = "Ceci n'est pas poblématique"
+        var b = 'Ceci n\'est pas problématique'
+
+        //Les booléens
+        //Les booléens permettent de stocker une information qui sera soit vraie soit fausse
+        var vrai = true
+        var je_suis_faux = false
+        
+        //Les tableaux
+//Les tableaux permettent de stocker une liste d'information. Cette liste peut contenir n'importe quel autre type de variable (un tableau peut même contenir un autre tableau).
+
+var eleves = ['Jean', 'Marc', 'Marion']
+var demo = [true, 10, 'Marc']
+//Ensuite il est possible de récupérer un élément dans un tableau en utilisant la notation [i] où i est un nombre représentant l'index de l'élément à récupérer (cet index commence par 0)
+
+eleves[0] // Jean
+eleves[2] // Marion
+demo[1] // 10
+demo[18] // undefined
+
+//Les objets
+//Les objets permettent de stocker des informations plus complexes qu'une simple liste. Pour le moment, vous pouvez imaginer les objets comme une liste avec des index nommés.
+
+var eleve = {
+   clef: 'valeur',
+   nom: 'Jean',
+   age: 18,
+   notes: [10, 4, 18] 
+}
+//Dans un objet les "clefs" sont appellés des propriétés. Pour récupérer une valeur associée à une propriété il y a 2 notations possibles.
+
+eleve.nom // Jean
+eleve.notes // [10, 4, 18]
+eleve.notes[1] // 4
+// On peut aussi utiliser une notation proche de celle des tableaux
+eleve['notes'] // [10, 4, 18]
+
+
+//De la même manière, les objets peuvent contenir des objets en valeur.
+
+var eleve = {
+    notes: {
+        math: 18,
+        francais: 14   
+    }   
+}
+// Pour récupérer la note de math de l'élève on peut alors faire
+eleve.notes.math // 18
+eleves.nom // undefined
+    </script>
+</body>
+</html>
+
