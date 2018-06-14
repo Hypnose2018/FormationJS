@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Les objets</title>
+</head>
+<body>
+    <script>
+        var primitive = "je suis une valeur primitive";
+
+        var moi = {
+            prenom : "Jonathan",
+            nom : "Michael",
+            age : "24",
+
+            identite : function () {
+                return 'Prenom : ' + this.prenom +
+                       '\nNom : ' + this.nom +
+                       '\nAge : ' + this.age;
+            }
+        }
+
+        alert(moi.identite());
+    </script>
+</body>
+</html>
