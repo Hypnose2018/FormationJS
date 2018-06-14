@@ -12,7 +12,7 @@
         //DECOUVERTE DE LA STRUCTURE CONDITIONNEL if
         //On déclare une variable heure on lui affecte une valeur 15 ensuite on comprare la variable heure a 18 et voir si la valeur renvoyée par javascript == vrai si vrai alors on aura Bonjour;
 
-        var heure = 15;
+    /*    var heure = 15;
         if (heure <= 18 == true) {
             alert('bonjour');
         }
@@ -79,10 +79,28 @@
         }else{
             alert("Il est moins de 16h");
         }
+               
+        //Simplication des conditions
+        //Il est pas necessaire d'ecrire << == true >>
+        //Par defaut le javascript renvoie true meme quand il y a pas de signe de comparaison 
+        var heure = 18;
+        if (heure > 12 ) {
+            alert('Il est midi passe');
+        }
+        */
+         //Par defaut le javascript renvoie true meme quand il y a pas de signe de comparaison
+        var x = 6, y = "" ;
+        if (x) {
+            alert('x est evalué par true par le javascript');
+        }
         
+        if (y) {
+            alert('y est évalué par true');
+        } else {
+            alert('y est evalue par false');
+        }
         
 
-        //Simplication des conditions 
         
     </script>
 </body>
