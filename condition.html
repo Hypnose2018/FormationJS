@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Les conditions</title>
 </head>
+
 <body>
     <h1>Les conditions</h1>
     <script>
         //DECOUVERTE DE LA STRUCTURE CONDITIONNEL if
         //On déclare une variable heure on lui affecte une valeur 15 ensuite on comprare la variable heure a 18 et voir si la valeur renvoyée par javascript == vrai si vrai alors on aura Bonjour;
-
+        /*
         var heure = 15;
         if (heure <= 18 == true) {
             alert('bonjour');
         }
-        
+
         //On déclare une variable heure on lui affecte une valeur 21 ensuite on comprare la variable heure a 18 et voir si la valeur renvoyée par javascript == false si false alors on aura Bonjour;
-        
         if (heure <= 18 == false) {
             alert('Bonsoir');
         }
@@ -27,81 +28,102 @@
         var heure = 23;
         if (heure <= 18 == true) {
             alert('Bonjour');
-        }else{
+        } else {
             alert('Bonsoir')
         }
-    
+
         //DECOUVERTE DE LA STRUCTURE CONDITIONNEL if...else if ...else
         var heure = 12;
 
-        if (typeof(heure) == "number" == true) {
+        if (typeof (heure) == "number" == true) {
             if (heure <= 18 == true) {
                 alert('C\'est l\'apres midi');
-            }
-            else if(heure == 12 == true){
+            } else if (heure == 12 == true) {
                 alert('Il est midi');
-            }
-            else if(heure < 12 == true){
+            } else if (heure < 12 == true) {
                 alert('C\'est le matin');
-            }
-            else{
+            } else {
                 alert('C\'est le soir');
             }
-        }
-        else{
+        } else {
             alert('Mauvais type de valeur');
-        } 
-    
+        }
+
+
         //LES OPERATEURS LOGIQUES A CONNAÎTRE "ET, OU , CONTRAIRE"
         var heure = 14;
 
         if (heure >= 0 && heure < 12 == true) {
             alert("c'est le matin");
-        } 
-        else if (heure === 12 == true) {            
+        } else if (heure === 12 == true) {
             alert("Il est midi pile");
-        }
-        else if (heure > 12 && heure <= 24) {
+        } else if (heure > 12 && heure <= 24) {
             alert("c'est l'apres midi ou le soir");
+        } else {
+            alert("La valeur entree ne semble pas valide");
         }
-        else{
-            alert("La valeur entree ne semble pas valide"); 
-        }
-    
-        var heure = 26 ;
-        if (heure < 0 || heure > 24 ) {
+
+        var heure = 26;
+        if (heure < 0 || heure > 24) {
             alert("L'heure est in valide");
         }
-        
+
         var heure = 18;
         if (!(heure <= 16) == true) {
             alert("Il est plus de 16h");
-        }else{
+        } else {
             alert("Il est moins de 16h");
         }
-               
+
         //Simplication des conditions
         //Il est pas necessaire d'ecrire << == true >>
-        //Par defaut le javascript renvoie true meme quand il y a pas de signe de comparaison 
         var heure = 18;
-        if (heure > 12 ) {
+        if (heure > 12) {
             alert('Il est midi passe');
         }
-        
-         //Par defaut le javascript renvoie true meme quand il y a pas de signe de comparaison
-        var x = 6, y = "" ;
+
+        //Par defaut le javascript renvoie true meme quand il y a pas de signe de comparaison
+        var x = 6,
+            y = "";
         if (x) {
             alert('x est evalué par true par le javascript');
         }
-        
+
         if (y) {
             alert('y est évalué par true');
         } else {
             alert('y est evalue par false');
         }
-        
 
-        
+        //Les tenaires
+        var heure = 19,
+            bon = "";
+        bon = (heure <= 18) ? "Bonjour" : "Bonsoir";
+        alert(bon);
+        */
+
+        //Les switch
+        var heure = 9;
+        switch (heure) {
+            case 8:
+                alert('il est 8h');
+                break;
+            case 9:
+                alert('il est 9h');
+                break;
+            case 10:
+                alert('il est 10h');
+                break;
+            case 11:
+                alert('il est 11h');
+                break;
+            case 12:
+                alert('il est 12h');
+                break;
+            default:
+                alert("Rien à afficher pour cette valeur");
+        }
     </script>
 </body>
+
 </html>
