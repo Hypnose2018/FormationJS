@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Les boucles</title>
+</head>
+
+<body>
+    <h1>Les boucles</h1>
+    <script>
+
+        //Une petite aparté sur la décrementation
+        var x = 0, xprime = 0, alpha = 10, alphaprime = 10;
+        var y = x++;
+        var beta = alpha-- ;
+
+        var yprime = ++xprime;
+        var betaprime = --alphaprime;
+        
+        alert(" y : " + y +
+            "\nx : " + x +
+            "\nbeta : " + beta +
+            "\nalpha : " + alpha + 
+            "\nxprime: " + yprime +
+            "\nyprime : " + xprime +
+            '\nbetaprime : ' + betaprime);
+
+        //La boucle while 
+        var x = 0;
+        while (x < 10) {
+            alert("x contient la valeur : " + x );
+            x++;
+        }
+
+        //La boucle do..while
+        var x = 0;
+        do{
+            alert("Hello word");
+            x--;
+        }while(x > 10);
+
+        //La boucle do..while
+        var i = "";
+        for(i = 0; i < 10; i++){
+            alert("la valeur de x vaut : " + i);
+        }
+
+    </script>
+</body>
+
+</html>
